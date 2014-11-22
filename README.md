@@ -1,8 +1,7 @@
 # Operative instructions
 ===============
-
-## How to use the script    
-
+In the following sections are shown some details about how to use the script and about how it is built.
+## How to use the script
 The dataset subtree must be put into the working directory along with the script *run_analysis.R* so that it finally looks like this:  
 ./run_analysis.R  
 ./UCI HAR Dataset  
@@ -63,4 +62,6 @@ In the **PROLOG** phase subsidiary data is loaded and formatted. Files involved 
   
 In the **MAIN** phase the bulk data is loaded and formatted. Files involved in this phase are *subject_train.txt*, *y_train.txt*, *X_train.txt*, *subject_test.txt*, *y_test.txt*, *X_test.txt*. Data is properly loaded and merged to get activity names, columns are chosen and reordered for a better readability. The output of this phase is one single dataframe named *maindf*.  
   
-The **TUNING** phase is the core of the script since here the *maindf* dataset is converted into a tidy dataset. At this stage there are only two id variables, *Participant.Code* and *Activity.Name*. The dataset is grouped and summarised for the mean value of non-id variables, as requested by the exercise. Non-id variables are melted into *Measurement* and *Mean* columns. The column *Measurement* is splitted into its components to better show which are the dimensions of the experiment. Finally some labels are redefined for a better readability and the dataset is sorted by the subsequent dimensions.
+The **TUNING** phase is the core of the script since here the *maindf* dataset is converted into a tidy dataset. At this stage there are only two id variables, *Participant.Code* and *Activity.Name*. The dataset is grouped and summarised for the mean value of non-id variables, as requested by the exercise. Non-id variables are melted into *Measurement* and *Mean* columns. The column *Measurement* is splitted into its components to better show which are the dimensions of the experiment. Finally some labels are redefined for a better readability and the dataset is sorted by the subsequent dimensions.  
+  
+The **EPILOG** phase simply output the resulting dataset to a external file.
