@@ -1,6 +1,6 @@
 # Operative instructions
-===============
-In the following sections are shown some details about how to use the script and about how it is built.
+In the following sections are shown some details about how to use the script and about how it is built.  
+
 ## How to use the script
 The dataset subtree must be put into the working directory along with the script *run_analysis.R* so that it finally looks like this:  
 ./run_analysis.R  
