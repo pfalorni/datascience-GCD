@@ -1,7 +1,7 @@
 datascience-GCD
 ===============
 
-These are instruction needed to safely run the script run_analysis.R for the convertion of the "UCI HAR Dataset" into a tidy dataset.
+These are instruction needed to safely run the script run_analysis.R for the convertion of the "UCI HAR Dataset" into a tidy dataset.  
 
 The dataset subtree must be put into the working directory along with the script run_analysis.R so that it finally looks like this:
 ./run_analysis.R
@@ -39,15 +39,15 @@ The dataset subtree must be put into the working directory along with the script
 ./UCI HAR Dataset/train/Inertial Signals/total_acc_z_train.txt
 ./UCI HAR Dataset/train/subject_train.txt
 ./UCI HAR Dataset/train/X_train.txt
-./UCI HAR Dataset/train/y_train.txt
-
+./UCI HAR Dataset/train/y_train.txt  
+  
 In this condition, just source the script:
-> source("./run_analysis.R")
-
+> source("./run_analysis.R")  
+  
 After the command is completed a new file (tydidf.csv) appear in the working directory with the tidy dataset. To load the CSV use the command:
-> data <- read.table("tidydf.csv", header = TRUE)
-
+> data <- read.table("tidydf.csv", header = TRUE)  
+  
 The script also create a new dataframe named tidydf that holds the tidy dataset. To view the dataframe use the command:
-> View(tidydf)
-
+> View(tidydf)  
+  
 WARNING: the script runs in the current environment thus it could overwrite existing variables.
