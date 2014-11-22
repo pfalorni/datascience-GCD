@@ -6,6 +6,7 @@ The tidy dataset is contained into the file *tidydf.csv*, a CSV file that can be
   
 The variables of the tidy dataset are:  
 `Participant.Code Activity.Name Domain Type Sensor Function Axis Mean`  
+
 The variables from *Domain* to *Axis* are a breakdown of the names of the features of the original dataset chosen for the analysis - i.e. those with a function *mean* or *std* applied to an axis - that is:  
  [1] "t.Body.Acc.mean().X"      "t.Body.Acc.mean().Y"     
  [3] "t.Body.Acc.mean().Z"      "t.Body.Acc.std().X"      
