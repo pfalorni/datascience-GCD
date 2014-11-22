@@ -1,4 +1,5 @@
 # Codebook
+This is the codebook for the data contained into the file *tidydf.csv*, as requested by the exercise for the final project of [Getting and Cleaning Data](https://class.coursera.org/getdata-009/)
 ## General notes
 The information provided in this codebook is an addendum to what is already been tracked by the original authors, Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio and Luca Oneto, on the [UCI web site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and into the descriptive text files delivered with the dataset - i.e. *README.txt* and *features_info.txt*.  
 The tidy dataset is contained into the file *tidydf.csv*, a CSV file that can be read by using the information specified in the *README.md* file of this repository.  
@@ -12,25 +13,25 @@ The variables from *Domain* to *Axis* are a breakdown of the names of the featur
  [7] "t.Gravity.Acc.mean().X"   "t.Gravity.Acc.mean().Y"  
  [9] "t.Gravity.Acc.mean().Z"   "t.Gravity.Acc.std().X"   
 [11] "t.Gravity.Acc.std().Y"    "t.Gravity.Acc.std().Z"   
-[13] "t.Body.Acc.Jerkmean().X"  "t.Body.Acc.Jerkmean().Y" 
+[13] "t.Body.Acc.Jerkmean().X"  "t.Body.Acc.Jerkmean().Y"  
 [15] "t.Body.Acc.Jerkmean().Z"  "t.Body.Acc.Jerkstd().X"  
 [17] "t.Body.Acc.Jerkstd().Y"   "t.Body.Acc.Jerkstd().Z"  
 [19] "t.Body.Gyro.mean().X"     "t.Body.Gyro.mean().Y"    
 [21] "t.Body.Gyro.mean().Z"     "t.Body.Gyro.std().X"     
 [23] "t.Body.Gyro.std().Y"      "t.Body.Gyro.std().Z"     
-[25] "t.Body.Gyro.Jerkmean().X" "t.Body.Gyro.Jerkmean().Y"
-[27] "t.Body.Gyro.Jerkmean().Z" "t.Body.Gyro.Jerkstd().X" 
-[29] "t.Body.Gyro.Jerkstd().Y"  "t.Body.Gyro.Jerkstd().Z" 
+[25] "t.Body.Gyro.Jerkmean().X" "t.Body.Gyro.Jerkmean().Y"  
+[27] "t.Body.Gyro.Jerkmean().Z" "t.Body.Gyro.Jerkstd().X"  
+[29] "t.Body.Gyro.Jerkstd().Y"  "t.Body.Gyro.Jerkstd().Z"  
 [31] "f.Body.Acc.mean().X"      "f.Body.Acc.mean().Y"     
 [33] "f.Body.Acc.mean().Z"      "f.Body.Acc.std().X"      
 [35] "f.Body.Acc.std().Y"       "f.Body.Acc.std().Z"      
-[37] "f.Body.Acc.Jerkmean().X"  "f.Body.Acc.Jerkmean().Y" 
-[39] "f.Body.Acc.Jerkmean().Z"  "f.Body.Acc.Jerkstd().X"  
-[41] "f.Body.Acc.Jerkstd().Y"   "f.Body.Acc.Jerkstd().Z"  
+[37] "f.Body.Acc.Jerkmean().X"  "f.Body.Acc.Jerkmean().Y"  
+[39] "f.Body.Acc.Jerkmean().Z"  "f.Body.Acc.Jerkstd().X"   
+[41] "f.Body.Acc.Jerkstd().Y"   "f.Body.Acc.Jerkstd().Z"   
 [43] "f.Body.Gyro.mean().X"     "f.Body.Gyro.mean().Y"    
 [45] "f.Body.Gyro.mean().Z"     "f.Body.Gyro.std().X"     
 [47] "f.Body.Gyro.std().Y"      "f.Body.Gyro.std().Z"  
-
+  
 The experiment is a fully crossed design with respect to the variables *Participant.Code* and *Activity.Name* while the other id variables are only partially crossed.
   
 The following apply to the tidy dataset:  
