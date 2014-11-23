@@ -5,7 +5,7 @@ The information provided in this codebook is an addendum to what is already been
 The tidy dataset is contained into the file *tidydf.csv*, a CSV file that can be read by using the information specified in the *README.md* file of this repository.  
   
 The variables of the tidy dataset are:  
-`Participant.Code Activity.Name Domain Type Sensor Function Axis Mean`  
+`Participant.Code | Activity.Name | Domain | Type | Sensor | Function | Axis | Mean`  
 
 The variables from *Domain* to *Axis* are a breakdown of the names of the features of the original dataset chosen for the analysis - i.e. those with a function *mean* or *std* applied to an axis - that is:  
  [1] tBodyAcc-mean()-X      tBodyAcc-mean()-Y      tBodyAcc-mean()-Z     
