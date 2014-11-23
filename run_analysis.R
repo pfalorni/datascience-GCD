@@ -1,8 +1,8 @@
+#---- PROLOG PHASE: LOAD AND FORMAT SUPPORT INFORMATION ----#
+
 # Load needed libraries
 library(dplyr)
 library(reshape2)
-
-#---- PROLOG PHASE: LOAD AND FORMAT SUPPORT INFORMATION ----#
 
 # Read and normalize names of features to ease analysis
 fnames <- read.table("UCI HAR Dataset/features.txt",
