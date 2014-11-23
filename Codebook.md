@@ -33,6 +33,8 @@ In particular:
 + The function names *mean()*, *std()*, *Jermmean()* and *Jerkstd()* have been extracted.
 + The name of the axis, *X*, *Y* or *Z*, have been extracted.  
 
+Before splitting the feature names, all 48 selected features have been melted into a NAME/VALUE pair and summarised by *Participant.Code* and *Activity.Name*.  
+
 The experiment underlying the original datsaset is a fully crossed design with respect to the variables *Participant.Code* and *Activity.Name* while the other id variables are only partially crossed.
   
 The following apply to the tidy dataset:  
