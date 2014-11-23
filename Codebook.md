@@ -1,7 +1,7 @@
 # Codebook
 This is the codebook for the data contained into the file *tidydf.csv*, as requested by the assignment for the final project of [Getting and Cleaning Data](https://class.coursera.org/getdata-009/)
 ## General notes
-The information provided in this codebook is an addendum to what is already been tracked by the original authors, Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio and Luca Oneto, on the [UCI web site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and in the descriptive text files delivered with the dataset - i.e. *README.txt* and *features_info.txt*. The original dataset can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).    
+The information provided in this codebook is an addendum to what is already been tracked by the original authors, Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio and Luca Oneto, on the [UCI web site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and in the descriptive text files delivered with the [dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) - i.e. *README.txt* and *features_info.txt*.   
 
 The tidy dataset is contained into the file *tidydf.csv*, a CSV file that can be read by using the information specified in the *README.md* file of this repository.  
   
