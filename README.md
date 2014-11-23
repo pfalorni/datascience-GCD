@@ -1,5 +1,5 @@
 # Operative instructions
-In the following sections are shown some details about how to use the script and about how it is built.  
+In the following sections are shown some details about how to use the script and about how it is built. The original dataset can be downloaded from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).  
 
 ## How to use the script
 The dataset subtree must be put into the working directory along with the script *run_analysis.R* so that it finally looks like this:  
