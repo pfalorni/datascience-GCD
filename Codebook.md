@@ -46,7 +46,8 @@ The following apply to the tidy dataset:
 Despite the fact that the assignment requested a single, tidy dataset, it can be noticed that the information could be split into more datasets, like:  
 + `Participant.Code | Activity.Name | Setup.Code | Measure.Code | Mean`
 + `Setup.Code | Sensor | Axis`
-+ `Measure.Code | Domain | Type | Function`
++ `Measure.Code | Domain | Type | Function`  
+
 Furthermore, the *Functions* of kind *Jerkmean()* and *Jerkstd()* could be avoided because they can be evaluated from other variables.  
 A detailed description of these considerations is outside the perimeter of the assignment thus it will not be provided here.
 
