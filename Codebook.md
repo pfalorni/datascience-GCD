@@ -8,32 +8,31 @@ The variables of the tidy dataset are:
 `Participant.Code Activity.Name Domain Type Sensor Function Axis Mean`  
 
 The variables from *Domain* to *Axis* are a breakdown of the names of the features of the original dataset chosen for the analysis - i.e. those with a function *mean* or *std* applied to an axis - that is:  
- [1] "t.Body.Acc.mean().X"      "t.Body.Acc.mean().Y"     
- [3] "t.Body.Acc.mean().Z"      "t.Body.Acc.std().X"      
- [5] "t.Body.Acc.std().Y"       "t.Body.Acc.std().Z"      
- [7] "t.Gravity.Acc.mean().X"   "t.Gravity.Acc.mean().Y"  
- [9] "t.Gravity.Acc.mean().Z"   "t.Gravity.Acc.std().X"   
-[11] "t.Gravity.Acc.std().Y"    "t.Gravity.Acc.std().Z"   
-[13] "t.Body.Acc.Jerkmean().X"  "t.Body.Acc.Jerkmean().Y"  
-[15] "t.Body.Acc.Jerkmean().Z"  "t.Body.Acc.Jerkstd().X"  
-[17] "t.Body.Acc.Jerkstd().Y"   "t.Body.Acc.Jerkstd().Z"  
-[19] "t.Body.Gyro.mean().X"     "t.Body.Gyro.mean().Y"    
-[21] "t.Body.Gyro.mean().Z"     "t.Body.Gyro.std().X"     
-[23] "t.Body.Gyro.std().Y"      "t.Body.Gyro.std().Z"     
-[25] "t.Body.Gyro.Jerkmean().X" "t.Body.Gyro.Jerkmean().Y"  
-[27] "t.Body.Gyro.Jerkmean().Z" "t.Body.Gyro.Jerkstd().X"  
-[29] "t.Body.Gyro.Jerkstd().Y"  "t.Body.Gyro.Jerkstd().Z"  
-[31] "f.Body.Acc.mean().X"      "f.Body.Acc.mean().Y"     
-[33] "f.Body.Acc.mean().Z"      "f.Body.Acc.std().X"      
-[35] "f.Body.Acc.std().Y"       "f.Body.Acc.std().Z"      
-[37] "f.Body.Acc.Jerkmean().X"  "f.Body.Acc.Jerkmean().Y"  
-[39] "f.Body.Acc.Jerkmean().Z"  "f.Body.Acc.Jerkstd().X"   
-[41] "f.Body.Acc.Jerkstd().Y"   "f.Body.Acc.Jerkstd().Z"   
-[43] "f.Body.Gyro.mean().X"     "f.Body.Gyro.mean().Y"    
-[45] "f.Body.Gyro.mean().Z"     "f.Body.Gyro.std().X"     
-[47] "f.Body.Gyro.std().Y"      "f.Body.Gyro.std().Z"  
+ [1] tBodyAcc-mean()-X      tBodyAcc-mean()-Y      tBodyAcc-mean()-Z     
+ [4] tBodyAcc-std()-X       tBodyAcc-std()-Y       tBodyAcc-std()-Z      
+ [7] tGravityAcc-mean()-X   tGravityAcc-mean()-Y   tGravityAcc-mean()-Z  
+[10] tGravityAcc-std()-X    tGravityAcc-std()-Y    tGravityAcc-std()-Z   
+[13] tBodyAccJerk-mean()-X  tBodyAccJerk-mean()-Y  tBodyAccJerk-mean()-Z  
+[16] tBodyAccJerk-std()-X   tBodyAccJerk-std()-Y   tBodyAccJerk-std()-Z  
+[19] tBodyGyro-mean()-X     tBodyGyro-mean()-Y     tBodyGyro-mean()-Z    
+[22] tBodyGyro-std()-X      tBodyGyro-std()-Y      tBodyGyro-std()-Z     
+[25] tBodyGyroJerk-mean()-X tBodyGyroJerk-mean()-Y tBodyGyroJerk-mean()-Z  
+[28] tBodyGyroJerk-std()-X  tBodyGyroJerk-std()-Y  tBodyGyroJerk-std()-Z  
+[31] fBodyAcc-mean()-X      fBodyAcc-mean()-Y      fBodyAcc-mean()-Z     
+[34] fBodyAcc-std()-X       fBodyAcc-std()-Y       fBodyAcc-std()-Z      
+[37] fBodyAccJerk-mean()-X  fBodyAccJerk-mean()-Y  fBodyAccJerk-mean()-Z  
+[40] fBodyAccJerk-std()-X   fBodyAccJerk-std()-Y   fBodyAccJerk-std()-Z  
+[43] fBodyGyro-mean()-X     fBodyGyro-mean()-Y     fBodyGyro-mean()-Z    
+[46] fBodyGyro-std()-X      fBodyGyro-std()-Y      fBodyGyro-std()-Z     
   
-The experiment is a fully crossed design with respect to the variables *Participant.Code* and *Activity.Name* while the other id variables are only partially crossed.
+In particular:  
++ the first letter of the name (*t* or *f*), indicating the domain of the values, has been converted to *Time* and *Frequency*.
++ The words *Body* pr *Gravity* have been extracted as an indication of what the value is referring to.
++ The words *Acc* and *Gyro*, indicating the sensor used to produce the value, have been converted to *Accelerometer* and *Gyroscope*.
++ The function names *mean()*, *std()*, *Jermmean()* and *Jerkstd()* have been extracted.
++ The name of the axis, *X*, *Y* or *Z*, have been extracted.  
+
+The experiment underlying the original datsaset is a fully crossed design with respect to the variables *Participant.Code* and *Activity.Name* while the other id variables are only partially crossed.
   
 The following apply to the tidy dataset:  
 * All variables but the last (*Mean*) are id variables, thus their values are stated by design.
@@ -45,7 +44,7 @@ The following apply to the tidy dataset:
 ## Description of variables
 **Participant.Code** A unique identifier for the involved subject. There are 30 subjects in the experiment.  
 **Activity.Name** The name of the activity performed by the subject. A total of 6 activities have been performed by all subjects: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.  
-**Domain** Either the factor *Time* or *Frequency*, indicating the domain of the variable *Mean*.  
+**Domain** Either the factor *Time* or *Frequency* (originally the letter "t" or "f" at the beginning of the feature name), indicating the domain of the values of the variable *Mean*.  
 **Type** The factor *Body*, indicating that the value of *Mean* is referred to the body of the subject, or *Gravity*, indicating that the value of *Mean* is referred to the estimate of the gravity vector.  
 **Sensor** Indicate which sensor performed the measure, *Accelerometer* or *Gyroscope*.  
 **Function** One of the two functions selected, *mean()*, *std()*, *Jerkmean()* or *Jerkstd()*.  
